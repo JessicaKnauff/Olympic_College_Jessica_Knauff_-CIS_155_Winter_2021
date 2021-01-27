@@ -1,0 +1,168 @@
+@charset "uft-8";
+
+/*
+Project: V1 website
+Class: CIS 155
+Author: Jessica Knauff
+Date:   20 Jan. 2021
+Filename: DaisyBlue_styles.css
+Comments made before line of code are clarlying comments
+Comments after line of code are comments to match module objective
+*/
+
+
+
+/* HTML and Body Styles */
+
+html{
+        /* /Datafiles/1305503929_633342/html02/demo/demo_css.html is where I found a color list and used Visual Studios Color Selector */
+   background-color: paleturquoise;
+        /* M2LO15 - Apply colors using CSS */
+
+}
+
+p{
+    color: rgba(10, 4, 4, 0.5);
+    
+}
+    /* M2LO3 - Demonstrate style precedence and inheritance in CSS */
+    /* This is precedence, the paragraph takes precedence and sets font color for paragraphs */
+
+body{
+
+    
+   background-color: papayawhip;
+   
+
+   color: black;
+   font-family: 'Yusei Magic', sans-serif;
+        /* M2LO13 - Demonstrate how CSS can change presentation of textual elements */
+        /* sets the font color to black for the body tags and the text will be a sans-serif */
+
+}
+
+
+
+article{
+    
+    font-size: 1.1em;
+}
+
+    /*M2LO3 - Demonstrate style precedence and inheritance in CSS  */
+    /* This is inheritance, the article inherit textcolor, background, and font type*/
+
+
+
+
+
+
+/* Heading Styles */
+
+h1, h2{
+     /* M2LO5 - Demonstrate contextual selectors  */
+
+    font-family:'Source Serif Pro', serif;
+    letter-spacing: 0.1em;
+}
+
+
+
+   
+
+h1{
+    font-size: 1.7em;
+}
+h2{
+    font-size: 1.5em;
+}
+article h1, h2 {
+
+    text-align: center;
+}
+p.{
+    text-align: center;
+}
+/* Aside and Blockquote Styles */
+
+
+
+
+
+/* Navigation Styles */	
+
+nav{
+    font-size: larger;
+}
+nav > ul {
+     /*M2LO5 - Demonstrate contextual selectors */
+
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    color: hsl(180, 93.8%, 19.0%);
+    color: rgb(3, 94, 94);
+        /* M2LO14 - Demonstrate and explain the use of progressive enhancement in CSS  */
+        /* This is done because if an old browser incounter hsl it does not know what to do with it and moves on, if rgb was not there it would
+        apply the default from the browsers style*/
+        /* Found hsl/rgb converter at https://www.rapidtables.com/convert/color/rgb-to-hsl.html*/
+
+    text-decoration: none;
+}
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color:	lightcoral;
+    text-decoration: underline;
+}
+
+
+
+
+/* List Styles */
+
+ol { list-style: upper-roman}
+/* M2LO12 - Demonstrate how CSS can change presentation of page elements */
+/* sets a 1 level ordered list to have upper-roman numerals instead of integers.  */
+
+ul { list-style: disc; }
+
+
+
+
+/* Footer Styles */
+
+body > footer {
+    color: black;
+    text-align: center;
+    background-color: lightcoral;
+    letter-spacing: 0.3em;
+}
+
+footer > a:visited {
+    color: hsl(180, 93.8%, 19.0%);
+   
+}
+
+a:visited, a:link{
+
+    color: hsl(180, 93.8%, 19.0%);
+    text-decoration: none;
+
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
